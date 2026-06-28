@@ -1,0 +1,13 @@
+# Set the base path to the directory containing data.yaml
+path: . 
+
+# Define relative paths to your image folders
+train: dataset/images/train
+val: dataset/images/val
+test: dataset/images/test  # Add this if you have a test split
+
+# Number of classes
+nc: 3
+
+# Class names
+names: ['stringing', 'cracking', 'off_platform']

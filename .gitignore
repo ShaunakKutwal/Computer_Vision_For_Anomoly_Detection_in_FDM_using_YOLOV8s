@@ -1,0 +1,67 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# ===== Virtual environments =====
+venv/
+env/
+ENV/
+.venv/
+Lib/
+Scripts/
+Include/
+pyvenv.cfg
+
+# ===== YOLO / Ultralytics =====
+*.cache
+runs/*/train*/weights/
+runs/*/val*/weights/
+*.pt
+*.onnx
+*.engine
+
+# Keep result plots but ignore raw prediction image dumps if too many
+runs/**/train_batch*.jpg
+runs/**/val_batch*_pred.jpg
+
+# ===== Datasets (too large for GitHub) =====
+dataset/images/
+dataset/labels/
+cracking/
+ortizing/
+*.jpg
+*.jpeg
+*.png
+!docs/**/*.png
+!docs/**/*.jpg
+!README_assets/**
+
+# ===== Secrets / credentials =====
+secrets.py
+*.env
+.env
+config_secret.*
+*.pem
+*.key
+
+# ===== OS / Editor junk =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ===== Logs =====
+logs/
+*.log
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+# ===== Local Pipeline Outputs =====
+alerts/
+snapshots/
+video_predictions/
+label_backup/
+original_labels_backup/
